@@ -1,0 +1,25 @@
+{
+  "clients": [
+    {
+      "id": "001",
+      "name": "Алексей Петров",
+      "last_purchase": "Porsche Cayenne",
+      "budget": 250000,
+      "status": "vip"
+    },
+    {
+      "id": "002",
+      "name": "Мария Соколова",
+      "last_purchase": "Tesla Model 3",
+      "budget": 120000,
+      "status": "loyal"
+    },
+    {
+      "id": "003",
+      "name": "Иван Иванов",
+      "last_purchase": "BMW X5",
+      "budget": 150000,
+      "status": "new"
+    }
+  ]
+}
