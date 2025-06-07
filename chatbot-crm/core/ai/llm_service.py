@@ -9,7 +9,7 @@ logger = logging.getLogger("LLMService")
 class LLMService:
     def __init__(self):
         # Ваш ключ OpenRouter (лучше хранить в .env)
-        self.api_key = "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"
+        self.api_key = "Вбейте сюда api c openrouter"
         self.base_url = "https://openrouter.ai/api/v1"
     
     def generate_response(self, query: str, client: Client) -> str:
