@@ -8,7 +8,6 @@ logger = logging.getLogger("LLMService")
 
 class LLMService:
     def __init__(self):
-        # Ваш ключ OpenRouter (лучше хранить в .env)
         self.api_key = "Вбейте сюда api c openrouter"
         self.base_url = "https://openrouter.ai/api/v1"
     
@@ -27,12 +26,12 @@ class LLMService:
             headers = {
                 "Authorization": f"Bearer {self.api_key}",
                 "Content-Type": "application/json",
-                "HTTP-Referer": "https://premium-motors.ru",  # Ваш сайт
-                "X-Title": "Premium Motors Bot"  # Название приложения
+                "HTTP-Referer": "https://premium-motors.ru",  
+                "X-Title": "Premium Motors Bot"  
             }
             
             payload = {
-                "model": "anthropic/claude-3-haiku",  # Лучшая модель для русского
+                "model": "anthropic/claude-3-haiku", 
                 "messages": [
                     {"role": "user", "content": prompt}
                 ],
